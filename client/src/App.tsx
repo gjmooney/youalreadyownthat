@@ -2,6 +2,7 @@ import { useState } from 'react';
 import beaver from './assets/beaver.svg';
 import { ApiResponse } from 'shared';
 import { Button } from './components/ui/button';
+import Navbar from './components/navbar/Navbar';
 
 const SERVER_URL = import.meta.env.VITE_SERVER_URL || 'http://localhost:3000';
 
@@ -20,6 +21,7 @@ function App() {
 
   return (
     <div className="max-w-xl mx-auto flex flex-col gap-6 items-center justify-center min-h-screen">
+      <Navbar />
       <a href="https://github.com/stevedylandev/bhvr" target="_blank">
         <img
           src={beaver}
