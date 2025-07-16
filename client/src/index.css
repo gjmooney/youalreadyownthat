@@ -62,7 +62,7 @@
   --font-weight-base: 500;
   --font-weight-heading: 700;
 }
-  
+
 @layer base {
   body {
     @apply text-foreground font-base bg-background;
